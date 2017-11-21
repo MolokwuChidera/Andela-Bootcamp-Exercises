@@ -2,15 +2,14 @@ module.exports=function words(input){
    
   
 
-  let objCount ={},splitwords;
-  splitwords=input.toLowerCase();
-  splitwords = input.trim();
-  splitwords = input.replace(/[\n\t+]/g,' ');
-  splitwords=input.replace(/ +/g,' ');
-    splitwords = input.split(' ');
+    let objCount ={},splitwords;
+  splitwords=input.toLowerCase().trim();
 
+  splitwords=splitwords.split(/\s+/g);
+  
     
     splitwords.forEach(function(word){
+      word = word.replace(/\s+/g,"");
       if(objCount.hasOwnProperty(word)){
         objCount[word]++;
         
