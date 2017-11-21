@@ -1,0 +1,26 @@
+{
+  "name": "andela-bootcamp-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "test": "mocha day1/test/**.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MolokwuChidera/Andela-Bootcamp-Exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MolokwuChidera/Andela-Bootcamp-Exercises/issues"
+  },
+  "homepage": "https://github.com/MolokwuChidera/Andela-Bootcamp-Exercises#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+  
+  }
+}
