@@ -2,15 +2,14 @@ class VehicleDealership {// Creation of class
   constructor(vehicleBrand, vehicleName,vehiclePrice) {
     this._vehicleBrand = vehicleBrand;//use of private variables
     this._vehicleName = vehicleName;
-    this._vehicleAvailable=[1,0,1,1,0,1,1];
+    
     
   }
-
-  getvehiclesName() {
-    return `${this._vehicleBrand} ${this._vehicleName}`;
+ setvehicleAvailable(){
+ this._vehicleAvailable=[1,0,1,1,0,1,1];
   }
   
-  checkavailableVehicle(){
+  getvehicleAvailable(){
     let number = [];
     this.vehicleAvailable.forEach((x) => {
       if(x === 1){
@@ -19,6 +18,13 @@ class VehicleDealership {// Creation of class
     });
     return number.length;
   }
+  
+  getvehiclesName() {
+    return `${this._vehicleBrand} ${this._vehicleName}`;
+  }
+  
+ 
+  
 }
 
 class Car extends Vehicle { //Example of inheritance
