@@ -5,8 +5,10 @@ class VehicleDealership {// Creation of class
     
     
   }
- setvehicleAvailable(){
- this._vehicleAvailable=[1,0,1,1,0,1,1];
+ setvehicleAvailable(vehicleAvailable){
+  
+ this._vehicleAvailable=vehicleAvailable;
+   vehicleAvailable=[1,0,1,1,0,1,1];
   }
   
   getvehicleAvailable(){
@@ -37,4 +39,5 @@ class Car extends Vehicle { //Example of inheritance
     this._namesVehicles.push(vehicle);
     
   }
+  
 }
